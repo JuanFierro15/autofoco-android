@@ -13,4 +13,16 @@
     <string name="error_correo_invalido">Correo inválido</string>
     <string name="error_contrasena_corta">La contraseña debe tener al menos 6 caracteres</string>
     <string name="toast_bienvenida_login">¡Bienvenido de nuevo!</string>
+
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_usuario">Nombre de usuario</string>
+    <string name="hint_confirmar_contrasena">Confirmar contraseña</string>
+    <string name="hint_vehiculo">Tu vehículo (ej. Mazda RX-7 1992)</string>
+    <string name="label_pregunta_manejo">¿Qué manejas?</string>
+    <string name="opcion_carro">Carro</string>
+    <string name="opcion_moto">Moto</string>
+    <string name="opcion_ambos">Ambos</string>
+    <string name="label_terminos">Acepto los términos y condiciones</string>
+    <string name="boton_crear_cuenta">Crear cuenta</string>
+    <string name="texto_ir_login">¿Ya tienes cuenta? Inicia sesión</string>
 </resources>
