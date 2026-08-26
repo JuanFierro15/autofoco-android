@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/espaciado_md"
+    android:background="@drawable/bg_superficie_redondeada"
+    android:orientation="vertical"
+    android:padding="@dimen/espaciado_md">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/tamano_avatar"
+            android:layout_height="@dimen/tamano_avatar"
+            android:background="@drawable/bg_circulo"
+            android:contentDescription="@string/cd_avatar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espaciado_sm"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_usuario_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_texto_primario"
+                android:textStyle="bold"
+                tools:text="juanp_motors" />
+
+            <TextView
+                android:id="@+id/tv_vehiculo_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_texto_secundario"
+                android:textSize="12sp"
+                tools:text="Mazda RX-7 1992" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_mas_opciones"
+            android:layout_width="@dimen/tamano_icono_pequeno"
+            android:layout_height="@dimen/tamano_icono_pequeno"
+            android:contentDescription="@string/cd_mas_opciones"
+            android:src="@drawable/ic_mas_opciones"
+            app:tint="@color/color_texto_secundario" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_foto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/altura_foto_publicacion"
+        android:layout_marginTop="@dimen/espaciado_sm"
+        android:background="@color/color_superficie_alta"
+        android:contentDescription="@string/cd_foto_publicacion"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaciado_sm"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/espaciado_sm"
+            android:background="@drawable/bg_chip_ficha"
+            android:paddingStart="@dimen/espaciado_sm"
+            android:paddingTop="@dimen/espaciado_xs"
+            android:paddingEnd="@dimen/espaciado_sm"
+            android:paddingBottom="@dimen/espaciado_xs"
+            android:textColor="@color/color_texto_secundario"
+            android:textSize="12sp"
+            tools:text="Mazda" />
+
+        <TextView
+            android:id="@+id/tv_anio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/espaciado_sm"
+            android:background="@drawable/bg_chip_ficha"
+            android:paddingStart="@dimen/espaciado_sm"
+            android:paddingTop="@dimen/espaciado_xs"
+            android:paddingEnd="@dimen/espaciado_sm"
+            android:paddingBottom="@dimen/espaciado_xs"
+            android:textColor="@color/color_texto_secundario"
+            android:textSize="12sp"
+            tools:text="1992" />
+
+        <TextView
+            android:id="@+id/tv_modificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chip_ficha"
+            android:paddingStart="@dimen/espaciado_sm"
+            android:paddingTop="@dimen/espaciado_xs"
+            android:paddingEnd="@dimen/espaciado_sm"
+            android:paddingBottom="@dimen/espaciado_xs"
+            android:textColor="@color/color_texto_secundario"
+            android:textSize="12sp"
+            tools:text="Turbo bi-rotor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaciado_sm"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="@dimen/tamano_icono_accion"
+            android:layout_height="@dimen/tamano_icono_accion"
+            android:layout_marginEnd="@dimen/espaciado_md"
+            android:contentDescription="@string/cd_me_gusta"
+            android:src="@drawable/ic_corazon_borde"
+            app:tint="@color/color_texto_secundario" />
+
+        <ImageView
+            android:id="@+id/iv_comentario"
+            android:layout_width="@dimen/tamano_icono_accion"
+            android:layout_height="@dimen/tamano_icono_accion"
+            android:layout_marginEnd="@dimen/espaciado_md"
+            android:contentDescription="@string/cd_comentar"
+            android:src="@drawable/ic_comentario"
+            app:tint="@color/color_texto_secundario" />
+
+        <ImageView
+            android:id="@+id/iv_compartir"
+            android:layout_width="@dimen/tamano_icono_accion"
+            android:layout_height="@dimen/tamano_icono_accion"
+            android:contentDescription="@string/cd_compartir"
+            android:src="@drawable/ic_compartir"
+            app:tint="@color/color_texto_secundario" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaciado_xs"
+        android:textColor="@color/color_texto_primario"
+        android:textStyle="bold"
+        tools:text="128 me gusta" />
+
+    <TextView
+        android:id="@+id/tv_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaciado_xs"
+        android:textColor="@color/color_texto_primario"
+        tools:text="juanp_motors Restauración terminada después de 8 meses." />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fondo">
+
+    <TextView
+        android:id="@+id/tv_wordmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espaciado_lg"
+        android:layout_marginTop="@dimen/espaciado_lg"
+        android:letterSpacing="0.1"
+        android:text="@string/wordmark_app"
+        android:textColor="@color/color_acento"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_notificaciones"
+        android:layout_width="@dimen/tamano_icono_accion"
+        android:layout_height="@dimen/tamano_icono_accion"
+        android:layout_marginEnd="@dimen/espaciado_lg"
+        android:contentDescription="@string/cd_notificaciones"
+        android:src="@drawable/ic_notificacion"
+        app:layout_constraintBottom_toBottomOf="@id/tv_wordmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_wordmark"
+        app:tint="@color/color_texto_primario" />
+
+    <LinearLayout
+        android:id="@+id/layout_bienvenida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espaciado_lg"
+        android:layout_marginTop="@dimen/espaciado_lg"
+        android:layout_marginEnd="@dimen/espaciado_lg"
+        android:background="@drawable/bg_superficie_redondeada"
+        android:orientation="vertical"
+        android:padding="@dimen/espaciado_md"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_wordmark">
+
+        <TextView
+            android:id="@+id/tv_saludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_texto_primario"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="¡Bienvenido, Juan!" />
+
+        <TextView
+            android:id="@+id/tv_usuario_bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaciado_xs"
+            android:textColor="@color/color_texto_secundario"
+            tools:text="@juanp" />
+
+        <TextView
+            android:id="@+id/tv_badge_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaciado_sm"
+            android:background="@drawable/bg_chip_ficha"
+            android:paddingStart="@dimen/espaciado_sm"
+            android:paddingTop="@dimen/espaciado_xs"
+            android:paddingEnd="@dimen/espaciado_sm"
+            android:paddingBottom="@dimen/espaciado_xs"
+            android:textColor="@color/color_acento"
+            android:textSize="12sp"
+            tools:text="Carro · Mazda RX-7 1992" />
+
+        <TextView
+            android:id="@+id/tv_sesion_recordada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaciado_xs"
+            android:text="@string/texto_sesion_recordada"
+            android:textColor="@color/color_texto_secundario"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_publicaciones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/espaciado_md"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/espaciado_lg"
+        android:paddingTop="@dimen/espaciado_xs"
+        android:paddingEnd="@dimen/espaciado_lg"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_bienvenida"
+        tools:listitem="@layout/item_publicacion" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_superficie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

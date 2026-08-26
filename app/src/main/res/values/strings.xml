@@ -31,4 +31,20 @@
     <string name="error_selecciona_manejo">Selecciona qué manejas</string>
     <string name="error_acepta_terminos">Debes aceptar los términos</string>
     <string name="toast_cuenta_creada">¡Cuenta creada!</string>
+
+    <string name="cd_notificaciones">Notificaciones</string>
+    <string name="cd_avatar">Foto de perfil</string>
+    <string name="cd_mas_opciones">Más opciones</string>
+    <string name="cd_foto_publicacion">Foto de la publicación</string>
+    <string name="cd_me_gusta">Me gusta</string>
+    <string name="cd_comentar">Comentar</string>
+    <string name="cd_compartir">Compartir</string>
+
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_buscar">Buscar</string>
+    <string name="nav_publicar">Publicar</string>
+    <string name="nav_actividad">Actividad</string>
+    <string name="nav_perfil">Perfil</string>
+
+    <string name="texto_sesion_recordada">Sesión recordada</string>
 </resources>
