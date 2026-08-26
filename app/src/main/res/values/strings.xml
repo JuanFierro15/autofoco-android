@@ -25,4 +25,10 @@
     <string name="label_terminos">Acepto los términos y condiciones</string>
     <string name="boton_crear_cuenta">Crear cuenta</string>
     <string name="texto_ir_login">¿Ya tienes cuenta? Inicia sesión</string>
+
+    <string name="error_usuario_corto">El usuario debe tener al menos 3 caracteres</string>
+    <string name="error_contrasenas_no_coinciden">Las contraseñas no coinciden</string>
+    <string name="error_selecciona_manejo">Selecciona qué manejas</string>
+    <string name="error_acepta_terminos">Debes aceptar los términos</string>
+    <string name="toast_cuenta_creada">¡Cuenta creada!</string>
 </resources>
