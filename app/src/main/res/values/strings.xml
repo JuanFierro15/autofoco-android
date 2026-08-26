@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Autofoco</string>
     <string name="wordmark_app">AUTOFOCO</string>
+
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="label_recordarme">Recordarme</string>
+    <string name="boton_entrar">Entrar</string>
+    <string name="texto_ir_registro">¿No tienes cuenta? Regístrate</string>
 </resources>

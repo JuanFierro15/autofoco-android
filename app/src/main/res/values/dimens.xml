@@ -8,4 +8,6 @@
 
     <dimen name="radio_esquina_sm">8dp</dimen>
     <dimen name="radio_esquina_md">16dp</dimen>
+
+    <dimen name="area_tactil_min">48dp</dimen>
 </resources>
