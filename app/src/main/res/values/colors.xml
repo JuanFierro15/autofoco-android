@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_fondo">#101214</color>
+    <color name="color_superficie">#1B1E21</color>
+    <color name="color_superficie_alta">#22262A</color>
+    <color name="color_acento">#FFA000</color>
+    <color name="color_texto_primario">#F2F2F2</color>
+    <color name="color_texto_secundario">#9AA0A6</color>
+</resources>

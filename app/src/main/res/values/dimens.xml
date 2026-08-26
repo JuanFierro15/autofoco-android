@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="espaciado_xs">4dp</dimen>
+    <dimen name="espaciado_sm">8dp</dimen>
+    <dimen name="espaciado_md">16dp</dimen>
+    <dimen name="espaciado_lg">24dp</dimen>
+    <dimen name="espaciado_xl">32dp</dimen>
+
+    <dimen name="radio_esquina_sm">8dp</dimen>
+    <dimen name="radio_esquina_md">16dp</dimen>
+</resources>
