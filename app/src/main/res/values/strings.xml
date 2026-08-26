@@ -7,4 +7,10 @@
     <string name="label_recordarme">Recordarme</string>
     <string name="boton_entrar">Entrar</string>
     <string name="texto_ir_registro">¿No tienes cuenta? Regístrate</string>
+
+    <string name="error_campo_obligatorio">Campo obligatorio</string>
+    <string name="error_campos_vacios">Completa todos los campos</string>
+    <string name="error_correo_invalido">Correo inválido</string>
+    <string name="error_contrasena_corta">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="toast_bienvenida_login">¡Bienvenido de nuevo!</string>
 </resources>
