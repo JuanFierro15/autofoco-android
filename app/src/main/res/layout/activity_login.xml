@@ -7,7 +7,7 @@
     android:padding="@dimen/espaciado_lg">
 
     <TextView
-        android:id="@+id/textWordmark"
+        android:id="@+id/tv_wordmark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/espaciado_xl"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayoutCorreo"
+        android:id="@+id/til_correo"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,10 +29,10 @@
         android:hint="@string/hint_correo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textWordmark">
+        app:layout_constraintTop_toBottomOf="@id/tv_wordmark">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextCorreo"
+            android:id="@+id/et_correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -41,7 +41,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayoutContrasena"
+        android:id="@+id/til_contrasena"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,10 +50,10 @@
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputLayoutCorreo">
+        app:layout_constraintTop_toBottomOf="@id/til_correo">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextContrasena"
+            android:id="@+id/et_contrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -62,7 +62,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switchRecordarme"
+        android:id="@+id/sw_recordarme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/espaciado_md"
@@ -70,10 +70,10 @@
         android:text="@string/label_recordarme"
         android:textColor="@color/color_texto_primario"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputLayoutContrasena" />
+        app:layout_constraintTop_toBottomOf="@id/til_contrasena" />
 
     <Button
-        android:id="@+id/botonEntrar"
+        android:id="@+id/btn_entrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/espaciado_lg"
@@ -86,10 +86,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/switchRecordarme" />
+        app:layout_constraintTop_toBottomOf="@id/sw_recordarme" />
 
     <TextView
-        android:id="@+id/textIrRegistro"
+        android:id="@+id/tv_ir_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/espaciado_md"
@@ -100,6 +100,6 @@
         android:textColor="@color/color_acento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/botonEntrar" />
+        app:layout_constraintTop_toBottomOf="@id/btn_entrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
