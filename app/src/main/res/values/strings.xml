@@ -47,4 +47,13 @@
     <string name="nav_perfil">Perfil</string>
 
     <string name="texto_sesion_recordada">Sesión recordada</string>
+
+    <string name="saludo_bienvenida">¡Bienvenido, %1$s!</string>
+    <string name="saludo_hola_de_nuevo">¡Hola de nuevo, @%1$s!</string>
+    <string name="formato_usuario">@%1$s</string>
+    <string name="formato_ficha_bienvenida">%1$s · %2$s</string>
+    <string name="formato_likes">%1$d Me gusta</string>
+    <string name="toast_proximamente">Disponible próximamente</string>
+    <string name="valor_por_defecto_usuario">usuario</string>
+    <string name="valor_por_defecto_nombre">Usuario</string>
 </resources>
