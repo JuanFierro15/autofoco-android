@@ -12,4 +12,7 @@ interface MarcaDao {
 
     @Query("SELECT * FROM marcas ORDER BY makeName ASC")
     suspend fun obtenerTodas(): List<MarcaEntity>
+
+    @Query("DELETE FROM marcas")
+    suspend fun borrarTodas()
 }

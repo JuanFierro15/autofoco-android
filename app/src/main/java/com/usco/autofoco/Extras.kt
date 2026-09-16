@@ -11,4 +11,6 @@ object Extras {
 
     const val ORIGEN_LOGIN = "login"
     const val ORIGEN_REGISTRO = "registro"
+
+    const val PREF_TIPO_VEHICULO = "pref_tipo_vehiculo"
 }

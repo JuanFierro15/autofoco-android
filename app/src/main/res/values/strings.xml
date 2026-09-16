@@ -58,4 +58,6 @@
     <string name="valor_por_defecto_nombre">Usuario</string>
 
     <string name="titulo_marcas">Marcas</string>
+    <string name="opcion_carros">Carros</string>
+    <string name="opcion_motos">Motos</string>
 </resources>

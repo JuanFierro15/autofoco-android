@@ -19,11 +19,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <RadioGroup
+        android:id="@+id/rg_tipo_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espaciado_lg"
+        android:layout_marginTop="@dimen/espaciado_md"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo_marcas">
+
+        <RadioButton
+            android:id="@+id/rb_carros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/area_tactil_min"
+            android:text="@string/opcion_carros"
+            android:textColor="@color/color_texto_primario" />
+
+        <RadioButton
+            android:id="@+id/rb_motos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espaciado_md"
+            android:minHeight="@dimen/area_tactil_min"
+            android:text="@string/opcion_motos"
+            android:textColor="@color/color_texto_primario" />
+
+    </RadioGroup>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_marcas"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/espaciado_md"
+        android:layout_marginTop="@dimen/espaciado_sm"
         android:clipToPadding="false"
         android:paddingStart="@dimen/espaciado_lg"
         android:paddingTop="@dimen/espaciado_xs"
@@ -31,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo_marcas"
+        app:layout_constraintTop_toBottomOf="@id/rg_tipo_marca"
         tools:listitem="@layout/item_marca" />
 
     <ProgressBar
@@ -42,6 +71,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo_marcas" />
+        app:layout_constraintTop_toBottomOf="@id/rg_tipo_marca" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,15 +25,32 @@ class MarcasActivity : AppCompatActivity() {
         binding.rvMarcas.layoutManager = LinearLayoutManager(this)
         binding.rvMarcas.adapter = adapter
 
-        cargarMarcas()
+        val preferencias = getSharedPreferences("autofoco_prefs", MODE_PRIVATE)
+        val tipoGuardado = preferencias.getString(Extras.PREF_TIPO_VEHICULO, "car") ?: "car"
+
+        if (tipoGuardado == "motorcycle") {
+            binding.rbMotos.isChecked = true
+        } else {
+            binding.rbCarros.isChecked = true
+        }
+
+        cargarMarcas(tipoGuardado)
+
+        binding.rgTipoMarca.setOnCheckedChangeListener { _, checkedId ->
+            val tipo = if (checkedId == R.id.rb_motos) "motorcycle" else "car"
+            preferencias.edit().putString(Extras.PREF_TIPO_VEHICULO, tipo).apply()
+            cargarMarcas(tipo)
+        }
     }
 
-    private fun cargarMarcas() {
+    private fun cargarMarcas(tipo: String) {
+        binding.pbCargaMarcas.visibility = View.VISIBLE
         lifecycleScope.launch {
             val dao = AutofocoDatabase.obtenerInstancia(this@MarcasActivity).marcaDao()
             try {
-                val respuesta = RetrofitClient.api.getMakesForVehicleType("car")
+                val respuesta = RetrofitClient.api.getMakesForVehicleType(tipo)
                 val entidades = respuesta.Results.map { MarcaEntity(it.MakeId, it.MakeName) }
+                dao.borrarTodas()
                 dao.insertarTodas(entidades)
                 adapter.actualizar(entidades)
             } catch (e: Exception) {
