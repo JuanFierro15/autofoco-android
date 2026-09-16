@@ -1,4 +1,4 @@
-package com.usco.autofoco
+package com.usco.autofoco.model
 
 data class Publicacion(
     val usuario: String,

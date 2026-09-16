@@ -5,7 +5,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.usco.autofoco.adapter.PublicacionAdapter
 import com.usco.autofoco.databinding.ActivityPrincipalBinding
+import com.usco.autofoco.model.Publicacion
 
 class PrincipalActivity : AppCompatActivity() {
 

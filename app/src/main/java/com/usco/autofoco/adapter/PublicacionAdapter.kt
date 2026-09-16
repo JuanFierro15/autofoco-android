@@ -1,4 +1,4 @@
-package com.usco.autofoco
+package com.usco.autofoco.adapter
 
 import android.content.res.ColorStateList
 import android.text.Spannable
@@ -9,7 +9,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.usco.autofoco.R
 import com.usco.autofoco.databinding.ItemPublicacionBinding
+import com.usco.autofoco.model.Publicacion
 
 class PublicacionAdapter(private val publicaciones: List<Publicacion>) :
     RecyclerView.Adapter<PublicacionAdapter.PublicacionViewHolder>() {
