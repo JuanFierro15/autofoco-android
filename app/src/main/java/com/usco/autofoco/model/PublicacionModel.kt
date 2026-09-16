@@ -1,6 +1,6 @@
 package com.usco.autofoco.model
 
-data class Publicacion(
+data class PublicacionModel(
     val usuario: String,
     val vehiculo: String,
     val marca: String,

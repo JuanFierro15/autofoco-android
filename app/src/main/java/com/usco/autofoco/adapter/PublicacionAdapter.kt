@@ -11,9 +11,9 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.usco.autofoco.R
 import com.usco.autofoco.databinding.ItemPublicacionBinding
-import com.usco.autofoco.model.Publicacion
+import com.usco.autofoco.model.PublicacionModel
 
-class PublicacionAdapter(private val publicaciones: List<Publicacion>) :
+class PublicacionAdapter(private val publicaciones: List<PublicacionModel>) :
     RecyclerView.Adapter<PublicacionAdapter.PublicacionViewHolder>() {
 
     class PublicacionViewHolder(val binding: ItemPublicacionBinding) :
@@ -56,7 +56,7 @@ class PublicacionAdapter(private val publicaciones: List<Publicacion>) :
         }
     }
 
-    private fun actualizarLike(binding: ItemPublicacionBinding, publicacion: Publicacion) {
+    private fun actualizarLike(binding: ItemPublicacionBinding, publicacion: PublicacionModel) {
         val contexto = binding.root.context
 
         if (publicacion.meGusta) {

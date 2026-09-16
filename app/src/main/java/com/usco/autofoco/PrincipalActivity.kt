@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.usco.autofoco.adapter.PublicacionAdapter
 import com.usco.autofoco.databinding.ActivityPrincipalBinding
-import com.usco.autofoco.model.Publicacion
+import com.usco.autofoco.model.PublicacionModel
 
 class PrincipalActivity : AppCompatActivity() {
 
@@ -52,7 +52,7 @@ class PrincipalActivity : AppCompatActivity() {
 
     private fun configurarFeed() {
         val publicaciones = listOf(
-            Publicacion(
+            PublicacionModel(
                 usuario = "carlos_clasicos",
                 vehiculo = "Chevrolet Camaro SS 1969",
                 marca = "Chevrolet",
@@ -62,7 +62,7 @@ class PrincipalActivity : AppCompatActivity() {
                 fotoResId = R.drawable.foto_post_clasico_restaurado,
                 likes = 214
             ),
-            Publicacion(
+            PublicacionModel(
                 usuario = "santi_dostiempos",
                 vehiculo = "Yamaha RX 135",
                 marca = "Yamaha",
@@ -72,7 +72,7 @@ class PrincipalActivity : AppCompatActivity() {
                 fotoResId = R.drawable.foto_post_moto,
                 likes = 89
             ),
-            Publicacion(
+            PublicacionModel(
                 usuario = "esteban_jdm",
                 vehiculo = "Honda Civic EK 1999",
                 marca = "Honda",
@@ -82,7 +82,7 @@ class PrincipalActivity : AppCompatActivity() {
                 fotoResId = R.drawable.foto_post_carro_modificado,
                 likes = 342
             ),
-            Publicacion(
+            PublicacionModel(
                 usuario = "taller_delrio",
                 vehiculo = "Renault 4 GTL",
                 marca = "Renault",
@@ -92,7 +92,7 @@ class PrincipalActivity : AppCompatActivity() {
                 fotoResId = R.drawable.foto_post_motor_desarmado,
                 likes = 156
             ),
-            Publicacion(
+            PublicacionModel(
                 usuario = "andres_nightdrive",
                 vehiculo = "Mazda RX-7 FD",
                 marca = "Mazda",
@@ -102,7 +102,7 @@ class PrincipalActivity : AppCompatActivity() {
                 fotoResId = R.drawable.foto_post_nocturna,
                 likes = 278
             ),
-            Publicacion(
+            PublicacionModel(
                 usuario = "juanp_motors",
                 vehiculo = "Volkswagen Golf GTI Mk5",
                 marca = "Volkswagen",
