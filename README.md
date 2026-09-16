@@ -121,8 +121,13 @@ mostrando el último listado consultado, leído desde la base de datos local.
 
 ## Capturas
 
-*(pendiente agregar captura de la pantalla de Marcas: listado con el toggle
-Carros/Motos)*
+| Login | Registro | Feed |
+|---|---|---|
+| ![Login](capturas/login.png) | ![Registro](capturas/registro.png) | ![Feed](capturas/principal.png) |
+
+| Marcas · Carros | Marcas · Motos |
+|---|---|
+| ![Marcas, carros](capturas/marcas_carros.png) | ![Marcas, motos](capturas/marcas_motos.png) |
 
 ## Flujo de navegación
 
