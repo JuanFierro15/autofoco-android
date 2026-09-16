@@ -1,6 +1,6 @@
 package com.usco.autofoco.dto
 
-data class VpicResponse(
+data class VpicResponseDto(
     val Count: Int,
     val Message: String,
     val SearchCriteria: String?,
