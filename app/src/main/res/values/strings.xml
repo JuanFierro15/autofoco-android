@@ -56,4 +56,6 @@
     <string name="toast_proximamente">Disponible próximamente</string>
     <string name="valor_por_defecto_usuario">usuario</string>
     <string name="valor_por_defecto_nombre">Usuario</string>
+
+    <string name="titulo_marcas">Marcas</string>
 </resources>

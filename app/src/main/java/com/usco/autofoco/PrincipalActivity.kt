@@ -1,5 +1,6 @@
 package com.usco.autofoco
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -120,11 +121,16 @@ class PrincipalActivity : AppCompatActivity() {
 
     private fun configurarBottomNav() {
         binding.bottomNav.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.nav_inicio) {
-                true
-            } else {
-                Toast.makeText(this, R.string.toast_proximamente, Toast.LENGTH_SHORT).show()
-                false
+            when (item.itemId) {
+                R.id.nav_inicio -> true
+                R.id.nav_buscar -> {
+                    startActivity(Intent(this, MarcasActivity::class.java))
+                    true
+                }
+                else -> {
+                    Toast.makeText(this, R.string.toast_proximamente, Toast.LENGTH_SHORT).show()
+                    false
+                }
             }
         }
     }

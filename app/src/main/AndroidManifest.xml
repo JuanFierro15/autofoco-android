@@ -30,6 +30,9 @@
         <activity
             android:name=".PrincipalActivity"
             android:exported="false" />
+        <activity
+            android:name=".MarcasActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
