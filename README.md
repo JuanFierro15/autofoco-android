@@ -65,10 +65,6 @@ app/src/main/
     └── menu/                    // menú de la bottom navigation
 ```
 
-La app sigue sin Fragments, ViewModel, Hilt ni Navigation Component, pero ya no es
-un único paquete plano: cada capa (modelo, adapter, red, persistencia) vive en su
-propia carpeta a medida que el proyecto lo pidió.
-
 ## Laboratorio de Datos
 
 La pestaña "Buscar" de la barra inferior abre la pantalla de **Marcas**, que
